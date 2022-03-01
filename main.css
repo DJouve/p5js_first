@@ -34,6 +34,7 @@ body {
   background-color: #867fca;
 }
 
+
 /* First set-up*/
 
 .set-up_container {
@@ -41,6 +42,28 @@ body {
   height: 100vh;
   position: relative;
 }
+/* Introduction CSS */
+
+.introduction_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3000px;
+  width: 100%;
+  background-image: url(src/img/INTRO.svg);
+  background-size: cover;
+}
+
+.introduction_end_container{
+  width: 70vw;
+  margin: 0 auto;
+  position: absolute;
+  top: 2700px;
+  left: 14vw;
+  color: white;
+  text-align: center;
+}
+
 .set-up {
   position: absolute;
   top: 0;
@@ -176,6 +199,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .hour_choice_selector .hour_input{

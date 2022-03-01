@@ -9,6 +9,14 @@ const userFilters = {
   time: ""
 };
 
+// Introduction screen
+
+const introButton = document.querySelector(".end_introduction")
+introButton.addEventListener("click", () => {
+  const introductionContainer = document.querySelector(".introduction_container");
+  introductionContainer.classList.add("hide");
+});
+
 // First screen
 
 const tvPathButton = document.querySelector(".tv-path");
@@ -20,7 +28,6 @@ tvPathButton.addEventListener("click", () => {
   const pathSetup = document.querySelector(".path_setup");
   pathSetup.classList.add("hide");
   userFilters.choice = "tv";
-  console.log(userFilters);
 });
 
 radioPathButton.addEventListener("click", () => {
