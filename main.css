@@ -53,7 +53,7 @@ body {
 .set-up h1 {
   color: #fff;
   font-weight: 800;
-  width: 80%;
+  width: 70vw;
   margin: 0 auto;
   text-align: center;
   margin-top: 5%;
@@ -112,4 +112,78 @@ body {
 .chain_infos p {
   text-align: start;
   font-size: 16px;
+}
+
+/* Year choice CSS */
+
+.slidecontainer {
+  width: 70vw;
+  margin: 15% auto 0 auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 50px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  background: #89b2f3;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #89b2f3;
+  cursor: pointer;
+}
+
+.year_choice_display {
+  margin-top: 3% !important;
+  margin-bottom: 5% !important;
+}
+
+
+/* Hour choice CSS */
+
+.hour_choice_container{
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin-top: 2%;
+}
+
+.hour_choice_selector{
+  width: 21%;
+  height: 15%;
+  margin: 20 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hour_choice_selector .hour_input{
+  font-size: 26px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  color: black;
+  margin-top: 5%;
 }

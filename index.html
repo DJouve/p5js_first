@@ -11,13 +11,60 @@
 
 <body>
     <div class="set-up_container">
-        <div class="set-up"></div>
-        <div class="set-up tv_year_count">
-            <h1>Sur quelle chaîne pensez-vous qu’une femme dispose d’autant de temps de parole qu’un homme ?</h1>
-            <div class="year_choice_containe">
 
+
+
+        <div class="set-up tv_hour_count">
+            <h1>Quelle tranche horaire est plus susceptible de vous apporter autant de temps de parole qu’à un homme ? </h1>
+            <div class="hour_choice_container">
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">04:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">05:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">06:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">09:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">10:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">12:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">14:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">16:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">18:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">20:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">22:00</p>
+                </div>
+                <div class="hour_choice_selector tv_color">
+                    <p class="hour_input">00:00</p>
+                </div>
             </div>
         </div>
+
+        <div class="set-up tv_year_count">
+            <h1>Selon vous, en quelle année une femme peut avoir autant de temps de parole qu’un homme ?</h1>
+            <div class="slidecontainer">
+                <input type="range" min="2010" max="2019" value="2014" class="slider" id="myRange" oninput="updateTextInput(this.value)">
+            </div>              
+            <h1 class="year_choice_display"></h1>
+            <div class="button tv_color button-year-choice">Choisir</div>
+        </div>
+        
         <div class="set-up tv_chain_choice">
             <h1>Sur quelle chaîne pensez-vous qu’une femme dispose d’autant de temps de parole qu’un homme ?</h1>
             <div class="chain_choice_container">
@@ -39,6 +86,7 @@
             </div>
             <div class="button tv_color button-chain-choice">Choisir</div>
         </div>
+
         <div class="set-up path_setup">
             <h1>BONJOUR</h1>
             <p>Vous allez vous mettre à la place d’une jeune diplomée en audiovisuel et communication, et vous allez
@@ -49,6 +97,7 @@
                 <div class="button radio_color radio-path">Radio</div>
             </div>
         </div>
+
     </div>
     <script src="sketch.js"></script>
     <script src="main.js"></script>
