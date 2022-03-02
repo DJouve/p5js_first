@@ -147,6 +147,7 @@ body {
   border-radius: 10px;
   background-image: url(src/img/m6logo.svg);
   background-size: cover;
+  margin-right: 4vw;
 }
 
 .chain_container .chain_infos {
@@ -449,6 +450,7 @@ body {
 
 img.fake {
   width: 70vw;
-  margin: 0 auto;
+  margin-left: 15vw;
   height: auto;
+  margin-bottom: 10vh;
 }
