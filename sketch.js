@@ -10,11 +10,23 @@ async function fetchData() {
     return datapoints
 }
 
-// fetchData().then(datapoints => {
-//     for (let i = 0; i<datapoints.length; i++){
+let womenExpressionRate = 0
+let speechRate = 0
+let nbHourAnalyzed = 0
 
-//     }
-// })
+fetchData().then(datapoints => {
+    for (let i = 0; i<datapoints.length; i++){
+        if (datapoints[i].channel_name == userFilters.chain && datapoints[i].year == userFilters.year) {
+            womenExpressionRate = datapoints[i].women_expression_rate
+            speechRate = datapoints[i].speech_rate
+            nbHourAnalyzed = datapoints[i].nb_hours_analyzed
+        }
+    }
+})
+
+console.log(womenExpressionRate)
+console.log(speechRate)
+console.log(nbHourAnalyzed)
 
 
 // Big CHART
