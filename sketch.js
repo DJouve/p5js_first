@@ -10,7 +10,7 @@ function updateChart () {
         return datapoints
     }
 
-    // let womenExpressionRate = 0
+    let womenExpressionRateArray = []
     let speechRate = 0
     let nbHourAnalyzed = 0
 
@@ -18,7 +18,11 @@ function updateChart () {
         const womenExpressionRate = datapoints.map(function(index){
             return Math.round(index.women_expression_rate)
         })
+        for (let i = 583; i<592; i++){
+            womenExpressionRateArray.push(womenExpressionRate[i])
+        }
         console.log(womenExpressionRate)
+        console.log(womenExpressionRateArray)
         }
     )
 }
