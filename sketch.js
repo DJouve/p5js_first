@@ -14,23 +14,25 @@ function updateChart () {
     let speechRate = 0
     let nbHourAnalyzed = 0
 
-    for (let i = 0; i<datapoints.length; i++) {
-        if (datapoints[i].channel_name != userFilters.chain) {
-            datapoints.remove(datapoints[i])
+    fetchData().then(datapoints => {
+        for (let i = 0; i<datapoints.length; i++) {
+            if (datapoints[i].channel_name != userFilters.chain) {
+                datapoints.remove(datapoints[i])
+            }
         }
-    }
-    console.log(datapoints)
-    // fetchData().then(datapoints => {
-    //     const womenExpressionRate = datapoints.map(function(index){
-    //         return Math.round(index.women_expression_rate)
-    //     })
-    //     for (let i = 583; i<592; i++){
-    //         womenExpressionRateArray.push(womenExpressionRate[i])
-    //     }
-    //     console.log(womenExpressionRate)
-    //     console.log(womenExpressionRateArray)
-    //     }
-    // )
+        console.log(datapoints)
+
+        
+        //     const womenExpressionRate = datapoints.map(function(index){
+        //     return Math.round(index.women_expression_rate)
+        // })
+        // for (let i = 583; i<592; i++){
+        //     womenExpressionRateArray.push(womenExpressionRate[i])
+        // }
+        // console.log(womenExpressionRate)
+        // console.log(womenExpressionRateArray)
+        }
+    )
 }
 
 
