@@ -11,39 +11,37 @@ function updateChart () {
     }
 
     let womenExpressionRateArray = []
-    let speechRate = 0
-    let nbHourAnalyzed = 0
+    let nbHourAnalyzed = []
     const yearIndex = userFilters.year - 2010
-    console.log(yearIndex)
-
-    // bigChart.config.data = []
-
     const bigChartValue = document.querySelector(".big_chart_value")
-
+    const hoursTotal = document.querySelector(".hours_total")
+    
     fetchData().then(datapoints => {
 
-        const womenExpressionRate = datapoints.map(function(index){
+        let womenExpressionRate = datapoints.map(function(index){
             return Math.round(index.women_expression_rate)
-            })
-            for (let i = 583; i<592; i++){
+        })
+            for (let i = 583; i<593; i++){
                 womenExpressionRateArray.push(womenExpressionRate[i])
-            }
-            console.log(womenExpressionRate)
-            console.log(womenExpressionRateArray)
-            const randomTime = womenExpressionRateArray[Math.floor(Math.random()*8)]
-            console.log(randomTime)
-            bigChartValue.innerHTML = randomTime
-            }
-        )
-
-        
-
+        }
+        console.log(womenExpressionRateArray)
+        womenExpressionRate = womenExpressionRateArray[yearIndex]
+        console.log(womenExpressionRate)
+        bigChartValue.innerHTML = womenExpressionRate
+        });
+        // let hoursAnalyzed = datapoints.map(function(index){
+        //     return Math.round(index.nb_hours_analyzed)
+        // })
+        // for (let j = 583; j<593; j++){
+        //     nbHourAnalyzed.push(hoursAnalyzed[i])
+        // }
+        // hoursTotal.innerHTML = nbHourAnalyzed[yearIndex]
 }
 
 
 // Big CHART
 
-const dataBigChart = {
+const data = {
     labels: [
       'Red',
       'Grey',
@@ -59,9 +57,9 @@ const dataBigChart = {
     }],
   };
 
-  const configBigChart = {
+  const config = {
     type: 'doughnut',
-    data: dataBigChart,
+    data: data,
     options: {
         elements: {
             arc: {
@@ -78,7 +76,7 @@ const dataBigChart = {
 
   const bigChart = new Chart(
     document.getElementById('bigChart'),
-    configBigChart
+    config
   );
 
 // SMALL CHART 1
@@ -90,7 +88,7 @@ const dataSmallChart1 = {
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [50, 50],
+      data: [55, 45],
       backgroundColor: [
         'rgb(255, 180, 91)',
         'rgb(54, 54, 54)',

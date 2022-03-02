@@ -436,3 +436,9 @@ body {
   color: white;
   text-align: center;
 }
+
+img.fake{
+  width: 70vw;
+  margin: 0 auto;
+  height: auto;
+}
