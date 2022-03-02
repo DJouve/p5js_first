@@ -20,13 +20,13 @@ fetchData().then(datapoints => {
             womenExpressionRate = datapoints[i].women_expression_rate
             speechRate = datapoints[i].speech_rate
             nbHourAnalyzed = datapoints[i].nb_hours_analyzed
+            
+            console.log(womenExpressionRate)
+            console.log(speechRate)
+            console.log(nbHourAnalyzed)
         }
     }
 })
-
-console.log(womenExpressionRate)
-console.log(speechRate)
-console.log(nbHourAnalyzed)
 
 
 // Big CHART
