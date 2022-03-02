@@ -11,8 +11,52 @@
 
 <body>
 
-
     <div class="set-up_container">
+
+        <div class="main_container">
+            <div class="recap_container">
+                <h1>Vous avez fait vos choix afin d’avoir autant de temps de parole qu’un homme. Bien essayé mais on vous laisse découvrir la réalité </h1>
+                <div class="choice_recap_container">
+                </div>
+            </div>
+            <h1 class="middle_sht">Voici le faible pourcentage de temps de parole que vous obtenez à l’antenne par rapport à un homme :</h1>
+            <div class="doughnut_chart_container">
+                <div class="big_chart_container">
+                    <canvas id="bigChart" width="400" height="400"></canvas>
+                    <p class="big_chart_value chart_value">55%</p>
+                </div>
+                <div class="other_doughnut_container">
+                    <div class="first_doughnut_container flex_chart_container">
+                        <div class="small_chart_1_container">
+                            <canvas id="smallChart1" width="200" height="200"></canvas>
+                            <p class="small_chart_value chart_value">55%</p>
+                        </div>
+                        <h3 class="small_chart_description">Temps de parole des hommes</h3>
+                    </div>
+
+                    <div class="first_doughnut_container flex_chart_container">
+                        <div class="small_chart_2_container">
+                            <canvas id="smallChart2" width="200" height="200"></canvas>
+                            <p class="small_chart_value chart_value">55%</p>
+                        </div>
+                        <h3 class="small_chart_description">Temps de musique et publicités</h3>
+                    </div>
+
+                    <div class="first_doughnut_container flex_chart_container">
+                        <h2 class="hours_total">1504</h2>
+                        <h3 class="small_chart_description">Nombre d’heures analysées</h3>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="middle_sht">Partager sur les réseaux</h1>
+            <div class="social_container">
+                <div class="social_img"></div>
+                <div class="social_img"></div>
+                <div class="social_img"></div>
+            </div>
+        </div>
+
 
         <div class="set-up tv_hour_count">
             <h1>Quelle tranche horaire est plus susceptible de vous apporter autant de temps de parole qu’à un homme ? </h1>
@@ -108,9 +152,10 @@
 
     </div>
 
-
-    <script src="sketch.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js"></script>
+    <script src="sketch.js"></script>
 </body>
 
 </html>

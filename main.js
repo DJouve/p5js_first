@@ -9,6 +9,9 @@ const userFilters = {
   time: ""
 };
 
+const mainContainer = document.querySelector(".main_container")
+mainContainer.classList.add("hide")
+
 // Introduction screen
 
 const introButton = document.querySelector(".end_introduction")
@@ -42,7 +45,8 @@ const tvChainChoiceButton = document.querySelector(".button-chain-choice");
 tvChainChoiceButton.addEventListener("click", () => {
   const ChainChoice = document.querySelector(".tv_chain_choice");
   ChainChoice.classList.add("hide");
-  userFilters.chain = "getChain?";
+  const chainValue = document.querySelector(".chain_title")
+  userFilters.chain = chainValue.innerHTML;
 });
 
 // Fonction to move the selector for the Years
@@ -75,5 +79,36 @@ for (let i = 0; i< tvHourChoice.length; i++){
     hourChoice.classList.add("hide");
     userFilters.time = hourValues[i].innerHTML
     console.log(userFilters)
+    
+    // Get the recap in order
+    const recapContainer = document.querySelector(".choice_recap_container")
+
+    const recapChainContainer = document.createElement("p")
+    recapChainContainer.classList.add("chain_recap")
+    recapChainContainer.classList.add("item_recap")
+    recapChainContainer.innerHTML = userFilters.chain
+    recapContainer.appendChild(recapChainContainer)
+    const recapYearContainer = document.createElement("p")
+    recapYearContainer.classList.add("year_recap")
+    recapYearContainer.classList.add("item_recap")
+    recapYearContainer.innerHTML = userFilters.year
+    recapContainer.appendChild(recapYearContainer)
+    const recapHourContainer = document.createElement("p")
+    recapHourContainer.classList.add("time_recap")
+    recapHourContainer.classList.add("item_recap")
+    recapHourContainer.innerHTML = userFilters.time
+    recapContainer.appendChild(recapHourContainer)
+
+    mainContainer.classList.remove("hide")
+    
+    // const recapChainContainer = document.querySelectorAll(".chain_recap")
+    // console.log(recapChainContainer)
+    // const recapYearContainer = document.querySelectorAll(".year_recap")
+    // recapYearContainer.innerHTML = userFilters.year
+    // const recapHourContainer = document.querySelectorAll(".hour_recap")
+    // recapHourContainer.innerHTML = userFilters.time
   })
 }
+
+
+

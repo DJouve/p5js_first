@@ -211,3 +211,149 @@ body {
   color: black;
   margin-top: 5%;
 }
+
+
+/* Main content CSS */
+
+.main_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(src/img/RECAP.svg);
+  background-size: cover;
+}
+
+.main_container .recap_container{
+  width: 70vw;
+  margin: 5% auto;
+  height: auto;
+}
+.recap_container h1{
+  color: white;
+  text-align: center;
+}
+.choice_recap_container {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin: 0 auto;
+  height: auto;
+}
+.choice_recap_container .item_recap{
+  background-color: #FFB45B;
+  padding: 15px 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.middle_sht {
+  width: 40vw;
+  margin: 0 0 10vh 15vw;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* Big Chart */
+
+.doughnut_chart_container {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.big_chart_container {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+}
+
+/* PLacing charts with middle */
+
+.big_chart_container canvas#bigChart {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.chart_value{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin: 0;
+}
+
+.big_chart_container p.big_chart_value{
+  font-size: 70px;
+  font-weight: 600;
+}
+
+
+/* Other charts */
+
+.other_doughnut_container {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex_chart_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6vw;
+}
+
+
+/* SMaller charts */
+
+.small_chart_1_container {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+}
+.small_chart_2_container {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+}
+
+.other_doughnut_container canvas#smallChart1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.other_doughnut_container canvas#smallChart2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.other_doughnut_container p.small_chart_value{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.small_chart_description {
+  color: white;
+  width: 60%;
+  font-size: 30px;
+}
+
+.hours_total {
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 35px;
+  margin-left: 1vw;
+}
