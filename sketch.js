@@ -6,7 +6,15 @@ async function fetchData() {
     const response = await fetch(url)
     const datapoints = await response.json()
     console.log(datapoints)
+    console.log(datapoints.length)
+    return datapoints
 }
+
+// fetchData().then(datapoints => {
+//     for (let i = 0; i<datapoints.length; i++){
+
+//     }
+// })
 
 
 // Big CHART
