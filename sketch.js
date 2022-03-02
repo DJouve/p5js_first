@@ -17,7 +17,7 @@ function updateChart () {
     fetchData().then(datapoints => {
         const tvChain = datapoints.map(function(index){
             if (index.channel_name == userFilters.chain){
-                return datapoints[i]
+                return datapoints.index
             }
         })
         console.log(tvChain)
