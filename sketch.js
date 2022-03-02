@@ -16,7 +16,7 @@ function updateChart () {
 
     fetchData().then(datapoints => {
         const womenExpressionRate = datapoints.map(function(index){
-            return index.women_expression_rate
+            return Math.round(index.women_expression_rate)
         })
         console.log(womenExpressionRate)
         }
