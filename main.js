@@ -99,7 +99,7 @@ for (let i = 0; i< tvHourChoice.length; i++){
     recapHourContainer.innerHTML = userFilters.time
     recapContainer.appendChild(recapHourContainer)
 
-    fetchData()
+    updateChart()
 
     mainContainer.classList.remove("hide")
     

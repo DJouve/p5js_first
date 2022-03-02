@@ -1,28 +1,29 @@
 
 // DATA
-
-async function fetchData() {
-    const url = "https://djouve.github.io/p5js_first/src/data/years.json"
-    const response = await fetch(url)
-    const datapoints = await response.json()
-    console.log(datapoints)
-    console.log(datapoints.length)
-    return datapoints
-}
-
-let womenExpressionRate = 0
-let speechRate = 0
-let nbHourAnalyzed = 0
-
-fetchData().then(datapoints => {
-    const tvChain = datapoints.map(function(index){
-        if (index.channel_name == userFilters.chain){
-            return datapoints[i]
-        }
-    })
-    console.log(tvChain)
+function updateChart () {
+    async function fetchData() {
+        const url = "https://djouve.github.io/p5js_first/src/data/years.json"
+        const response = await fetch(url)
+        const datapoints = await response.json()
+        console.log(datapoints)
+        console.log(datapoints.length)
+        return datapoints
     }
-)
+
+    let womenExpressionRate = 0
+    let speechRate = 0
+    let nbHourAnalyzed = 0
+
+    fetchData().then(datapoints => {
+        const tvChain = datapoints.map(function(index){
+            if (index.channel_name == userFilters.chain){
+                return datapoints[i]
+            }
+        })
+        console.log(tvChain)
+        }
+    )
+}
 
 
 // Big CHART
