@@ -13,6 +13,12 @@ function updateChart () {
     let womenExpressionRateArray = []
     let speechRate = 0
     let nbHourAnalyzed = 0
+    const yearIndex = userFilters.year - 2010
+    console.log(yearIndex)
+
+    // bigChart.config.data = []
+
+    const bigChartValue = document.querySelector(".big_chart_value")
 
     fetchData().then(datapoints => {
 
@@ -24,19 +30,14 @@ function updateChart () {
             }
             console.log(womenExpressionRate)
             console.log(womenExpressionRateArray)
+            const randomTime = womenExpressionRateArray[Math.floor(Math.random()*8)]
+            console.log(randomTime)
+            bigChartValue.innerHTML = randomTime
             }
         )
 
         
 
-        const yearIndex = userFilters.year - 2010
-        console.log(yearIndex)
-
-        // bigChart.config.data = []
-
-        const bigChartValue = document.querySelector(".big_chart_value")
-        console.log(womenExpressionRateArray[Math.floor(Math.random()*8)])
-        bigChartValue.innerHTML = womenExpressionRateArray[yearIndex]
 }
 
 
