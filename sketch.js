@@ -15,9 +15,7 @@ function updateChart () {
     let nbHourAnalyzed = 0
 
     fetchData().then(datapoints => {
-        for (let i = 0; i<datapoints.length; i++) {
-            datapoints = datapoints.filter(item => item !== userFilters.chain)
-        }
+        datapoints = datapoints.filter(item => item !== userFilters.chain)
         console.log(datapoints)
 
 
