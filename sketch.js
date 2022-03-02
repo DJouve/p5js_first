@@ -15,18 +15,15 @@ function updateChart () {
     let nbHourAnalyzed = 0
 
     fetchData().then(datapoints => {
-        datapoints = datapoints.filter(item => item !== userFilters.chain)
-        console.log(datapoints)
 
-
-        //     const womenExpressionRate = datapoints.map(function(index){
-        //     return Math.round(index.women_expression_rate)
-        // })
-        // for (let i = 583; i<592; i++){
-        //     womenExpressionRateArray.push(womenExpressionRate[i])
-        // }
-        // console.log(womenExpressionRate)
-        // console.log(womenExpressionRateArray)
+        const womenExpressionRate = datapoints.map(function(index){
+        return Math.round(index.women_expression_rate)
+        })
+        for (let i = 583; i<592; i++){
+            womenExpressionRateArray.push(womenExpressionRate[i])
+        }
+        console.log(womenExpressionRate)
+        console.log(womenExpressionRateArray)
         }
     )
 }
