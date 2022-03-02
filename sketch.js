@@ -1,4 +1,14 @@
 
+// DATA
+
+async function fetchData() {
+    const url = "https://djouve.github.io/p5js_first/src/data/years.json"
+    const response = await fetch(url)
+    const datapoints = await response.json()
+    console.log(datapoints)
+}
+
+
 // Big CHART
 
 const dataBigChart = {
@@ -21,6 +31,11 @@ const dataBigChart = {
     type: 'doughnut',
     data: dataBigChart,
     options: {
+        elements: {
+            arc: {
+                borderWidth : 0
+            }
+        },
         plugins: {
             legend: {
                 display: false
@@ -45,7 +60,7 @@ const dataSmallChart1 = {
       label: 'My First Dataset',
       data: [300, 150],
       backgroundColor: [
-        'rgb(255, 99, 132)',
+        'rgb(255, 180, 91)',
         'rgb(54, 54, 54)',
       ],
       cutout: '70%',
@@ -56,6 +71,11 @@ const dataSmallChart1 = {
     type: 'doughnut',
     data: dataSmallChart1,
     options: {
+        elements: {
+            arc: {
+                borderWidth : 0
+            }
+        },
         plugins: {
             legend: {
                 display: false
@@ -81,7 +101,7 @@ const dataSmallChart2 = {
       label: 'My First Dataset',
       data: [300, 150],
       backgroundColor: [
-        'rgb(255, 99, 132)',
+        'rgb(255, 180, 91)',
         'rgb(54, 54, 54)',
       ],
       cutout: '70%',
@@ -92,6 +112,11 @@ const dataSmallChart2 = {
     type: 'doughnut',
     data: dataSmallChart2,
     options: {
+        elements: {
+            arc: {
+                borderWidth : 0
+            }
+        },
         plugins: {
             legend: {
                 display: false

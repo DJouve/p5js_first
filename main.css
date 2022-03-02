@@ -72,6 +72,7 @@ body {
   height: 100%;
   background-color: #222;
   background-image: url(src/img/HOME.svg);
+  background-size: cover;
 }
 .set-up h1 {
   color: #fff;
@@ -101,7 +102,7 @@ body {
 
 .chain_choice_container {
   display: flex;
-  width: 80%;
+  width: 60vw;
   margin: 5% auto;
   justify-content: space-around;
   align-items: center;
@@ -113,28 +114,44 @@ body {
   height: 50px;
   border-radius: 8px;
   background-color: grey;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
 }
 .chain_choice_container .chain_container {
-  background-color: red;
-  width: 60%;
+  width: 40vw;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
 }
 
 .chain_container .chain_img {
   width: 150px;
   height: 150px;
-  background-color: tomato;
+  border-radius: 10px;
+  background-image: url(src/img/m6logo.svg);
+  background-size: cover;
 }
 
 .chain_container .chain_infos {
-  width: 80%;
+  width:70%;
 }
 
-.chain_infos p {
+.chain_infos .chain_title {
   text-align: start;
-  font-size: 16px;
+  font-size: 32px;
+  font-weight: 600;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.chain_infos .chain_description {
+  text-align: start;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100% !important;
+  margin: 0 !important;
 }
 
 /* Year choice CSS */
@@ -250,8 +267,8 @@ body {
 }
 
 .middle_sht {
-  width: 40vw;
-  margin: 0 0 10vh 15vw;
+  width: 45vw;
+  margin: 0 0 5vh 15vw;
   color: white;
   font-size: 25px;
   font-weight: 600;
@@ -264,7 +281,7 @@ body {
   justify-content: space-between;
   width: 70vw;
   height: auto;
-  margin: 0 auto;
+  margin: 5vh auto;
 }
 
 .big_chart_container {
@@ -356,4 +373,36 @@ body {
   margin: 0 auto;
   font-size: 35px;
   margin-left: 1vw;
+}
+
+/* Social networks */
+
+.social_container {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  margin-left: 15vw;
+  margin-bottom: 10vh;
+}
+.social_container .social_img {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.social_container .social_img a{
+  width: 80px;
+  height: 80px;
+}
+
+.social_container .social_img.fb {
+  background-image: url(src/img/facebook.svg);
+}
+.social_container .social_img.tw {
+  background-image: url(src/img/twitter.svg);
+}
+.social_container .social_img.in {
+  background-image: url(src/img/linkedin.svg);
 }

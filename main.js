@@ -99,6 +99,8 @@ for (let i = 0; i< tvHourChoice.length; i++){
     recapHourContainer.innerHTML = userFilters.time
     recapContainer.appendChild(recapHourContainer)
 
+    fetchData()
+
     mainContainer.classList.remove("hide")
     
     // const recapChainContainer = document.querySelectorAll(".chain_recap")
