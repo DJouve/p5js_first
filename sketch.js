@@ -10,17 +10,17 @@ function updateChart () {
         return datapoints
     }
 
-    let womenExpressionRate = 0
+    // let womenExpressionRate = 0
     let speechRate = 0
     let nbHourAnalyzed = 0
 
     fetchData().then(datapoints => {
-        const tvChain = datapoints.map(function(index){
+        const womenExpressionRate = datapoints.map(function(index){
             if (index.channel_name == userFilters.chain){
-                return datapoints.index
+                return index.women_expression_rate
             }
         })
-        console.log(tvChain)
+        console.log(womenExpressionRate)
         }
     )
 }
