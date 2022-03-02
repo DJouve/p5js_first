@@ -27,10 +27,15 @@ function updateChart () {
             }
         )
 
+        
+
         const yearIndex = userFilters.year - 2010
         console.log(yearIndex)
+
+        // bigChart.config.data = []
+
         const bigChartValue = document.querySelector(".big_chart_value")
-        console.log(womenExpressionRateArray[yearIndex])
+        console.log(womenExpressionRateArray[Math.floor(Math.random()*8)])
         bigChartValue.innerHTML = womenExpressionRateArray[yearIndex]
 }
 
@@ -44,7 +49,7 @@ const dataBigChart = {
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 150],
+      data: [40, 60],
       backgroundColor: [
         'rgb(255, 99, 132)',
         'rgb(54, 54, 54)',
@@ -84,7 +89,7 @@ const dataSmallChart1 = {
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 150],
+      data: [50, 50],
       backgroundColor: [
         'rgb(255, 180, 91)',
         'rgb(54, 54, 54)',
@@ -125,7 +130,7 @@ const dataSmallChart2 = {
     ],
     datasets: [{
       label: 'My First Dataset',
-      data: [300, 150],
+      data: [4, 96],
       backgroundColor: [
         'rgb(255, 180, 91)',
         'rgb(54, 54, 54)',
