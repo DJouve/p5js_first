@@ -28,7 +28,9 @@ function updateChart () {
         )
 
         const yearIndex = userFilters.year - 2010
+        console.log(yearIndex)
         const bigChartValue = document.querySelector(".big_chart_value")
+        console.log(womenExpressionRateArray[yearIndex])
         bigChartValue.innerHTML = womenExpressionRateArray[yearIndex]
 }
 
