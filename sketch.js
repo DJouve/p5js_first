@@ -16,9 +16,7 @@ function updateChart () {
 
     fetchData().then(datapoints => {
         const womenExpressionRate = datapoints.map(function(index){
-            if (index.channel_name == userFilters.chain){
-                return index.women_expression_rate
-            }
+            return index.women_expression_rate
         })
         console.log(womenExpressionRate)
         }

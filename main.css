@@ -372,10 +372,10 @@ body {
 
 .hours_total {
   color: white;
-  width: 40%;
+  width: 8vw;
   margin: 0 auto;
   font-size: 35px;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 
 /* Social networks */
@@ -416,8 +416,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 70vw;
+  height: 30vh;
   margin: 0 auto;
+}
+
+.side_chart_container .bluebar {
+  width: 10vw;
+  height: 2vh;
+  border-radius: 5px;
 }
 
 .side_chart_container h1 {
