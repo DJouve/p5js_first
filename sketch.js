@@ -16,13 +16,11 @@ function updateChart () {
 
     fetchData().then(datapoints => {
         for (let i = 0; i<datapoints.length; i++) {
-            if (datapoints[i].channel_name != userFilters.chain) {
-                datapoints.remove(datapoints[i])
-            }
+            datapoints = datapoints.filter(item => item !== userFilters.chain)
         }
         console.log(datapoints)
 
-        
+
         //     const womenExpressionRate = datapoints.map(function(index){
         //     return Math.round(index.women_expression_rate)
         // })
