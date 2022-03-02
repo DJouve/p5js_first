@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -22,7 +22,7 @@ body {
   border-style: none;
   border-radius: 20px;
   font-weight: 600;
-  max-width: 150px;
+  max-width: 200px;
   text-align: center;
   color: white;
   cursor: pointer;
@@ -35,7 +35,6 @@ body {
   background-color: #867fca;
 }
 
-
 /* First set-up*/
 
 .set-up_container {
@@ -45,24 +44,35 @@ body {
 }
 /* Introduction CSS */
 
-.introduction_container {
+.introduction_background {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3000px;
   width: 100%;
+  height: 1900px;
+  background-color: #222222;
+}
+
+.introduction_container {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  height: 1900px;
+  width: 70%;
   background-image: url(src/img/INTRO.svg);
   background-size: cover;
 }
 
-.introduction_end_container{
+.introduction_end_container {
   width: 70vw;
   margin: 0 auto;
   position: absolute;
-  top: 2700px;
-  left: 14vw;
+  top: 1500px;
   color: white;
   text-align: center;
+}
+.introduction_end_container .end_introduction {
+  margin-top: 10vh;
 }
 
 .set-up {
@@ -83,6 +93,10 @@ body {
   text-align: center;
   margin-top: 5%;
 }
+.set-up h1.super_title {
+  margin-top: 25vh;
+}
+
 .set-up p {
   color: #fff;
   width: 50%;
@@ -92,7 +106,7 @@ body {
   font-size: 30px;
 }
 .path_container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 5%;
   display: flex;
@@ -136,7 +150,7 @@ body {
 }
 
 .chain_container .chain_infos {
-  width:70%;
+  width: 70%;
 }
 
 .chain_infos .chain_title {
@@ -166,12 +180,12 @@ body {
   -webkit-appearance: none;
   width: 100%;
   height: 30px;
-  border-radius: 50px;  
+  border-radius: 50px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .slider::-webkit-slider-thumb {
@@ -179,7 +193,7 @@ body {
   appearance: none;
   width: 50px;
   height: 50px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #89b2f3;
   cursor: pointer;
 }
@@ -197,10 +211,9 @@ body {
   margin-bottom: 5% !important;
 }
 
-
 /* Hour choice CSS */
 
-.hour_choice_container{
+.hour_choice_container {
   width: 70vw;
   margin: 0 auto;
   display: flex;
@@ -209,7 +222,7 @@ body {
   margin-top: 2%;
 }
 
-.hour_choice_selector{
+.hour_choice_selector {
   width: 21%;
   height: 21%;
   margin: 20 0;
@@ -220,7 +233,7 @@ body {
   cursor: pointer;
 }
 
-.hour_choice_selector .hour_input{
+.hour_choice_selector .hour_input {
   font-size: 26px;
   font-weight: 600;
   width: 100%;
@@ -231,7 +244,6 @@ body {
   color: black;
   margin-top: 5%;
 }
-
 
 /* Main content CSS */
 
@@ -245,12 +257,12 @@ body {
   background-size: cover;
 }
 
-.main_container .recap_container{
+.main_container .recap_container {
   width: 70vw;
   margin: 5% auto;
   height: auto;
 }
-.recap_container h1{
+.recap_container h1 {
   color: white;
   text-align: center;
 }
@@ -261,8 +273,8 @@ body {
   margin: 0 auto;
   height: auto;
 }
-.choice_recap_container .item_recap{
-  background-color: #FFB45B;
+.choice_recap_container .item_recap {
+  background-color: #ffb45b;
   padding: 15px 60px;
   font-size: 18px;
   font-weight: 600;
@@ -301,7 +313,7 @@ body {
   left: 0;
 }
 
-.chart_value{
+.chart_value {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -310,11 +322,10 @@ body {
   margin: 0;
 }
 
-.big_chart_container p.big_chart_value{
+.big_chart_container p.big_chart_value {
   font-size: 70px;
   font-weight: 600;
 }
-
 
 /* Other charts */
 
@@ -326,14 +337,13 @@ body {
   justify-content: space-between;
 }
 
-.flex_chart_container{
+.flex_chart_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 6vw;
 }
-
 
 /* SMaller charts */
 
@@ -359,7 +369,7 @@ body {
   left: 0;
 }
 
-.other_doughnut_container p.small_chart_value{
+.other_doughnut_container p.small_chart_value {
   font-size: 30px;
   font-weight: 600;
 }
@@ -395,7 +405,7 @@ body {
   background-size: cover;
 }
 
-.social_container .social_img a{
+.social_container .social_img a {
   width: 80px;
   height: 80px;
 }
@@ -437,7 +447,7 @@ body {
   text-align: center;
 }
 
-img.fake{
+img.fake {
   width: 70vw;
   margin: 0 auto;
   height: auto;

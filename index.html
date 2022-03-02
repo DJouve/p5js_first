@@ -15,11 +15,13 @@
 
         <div class="main_container">
             <div class="recap_container">
-                <h1>Vous avez fait vos choix afin d’avoir autant de temps de parole qu’un homme. Bien essayé mais on vous laisse découvrir la réalité </h1>
+                <h1>Vous avez fait vos choix afin d’avoir autant de temps de parole qu’un homme. Bien essayé mais on
+                    vous laisse découvrir la réalité </h1>
                 <div class="choice_recap_container">
                 </div>
             </div>
-            <h1 class="middle_sht">Voici le faible pourcentage de temps de parole que vous obtenez à l’antenne par rapport à un homme :</h1>
+            <h1 class="middle_sht">Voici le faible pourcentage de temps de parole que vous obtenez à l’antenne par
+                rapport à un homme :</h1>
             <div class="doughnut_chart_container">
                 <div class="big_chart_container">
                     <canvas id="bigChart" width="400" height="400"></canvas>
@@ -66,13 +68,11 @@
             </div>
             <!-- <img src="/src/img/fakegraph.png" alt="Fakegraph" class="fake"> -->
 
-
         </div>
 
-
-
         <div class="set-up tv_hour_count">
-            <h1>Quelle tranche horaire est plus susceptible de vous apporter autant de temps de parole qu’à un homme ? </h1>
+            <h1>Quelle tranche horaire est plus susceptible de vous apporter autant de temps de parole qu’à un homme ?
+            </h1>
             <div class="hour_choice_container">
                 <div class="hour_choice_selector tv_color">
                     <p class="hour_input">04:00</p>
@@ -116,61 +116,63 @@
         <div class="set-up tv_year_count">
             <h1>Selon vous, en quelle année une femme peut avoir autant de temps de parole qu’un homme ?</h1>
             <div class="slidecontainer">
-                <input type="range" min="2010" max="2019" value="2014" class="slider" id="myRange" oninput="updateTextInput(this.value)">
-            </div>              
+                <input type="range" min="2010" max="2019" value="2014" class="slider" id="myRange"
+                    oninput="updateTextInput(this.value)">
+            </div>
             <h1 class="year_choice_display"></h1>
             <div class="button tv_color button-year-choice">Choisir</div>
         </div>
-        
+
         <div class="set-up tv_chain_choice">
             <h1>Sur quelle chaîne pensez-vous qu’une femme dispose d’autant de temps de parole qu’un homme ?</h1>
             <div class="chain_choice_container">
-                <div class="arrow"><</div>
+                <div class="arrow">
+                    < </div>
+                        <div class="chain_container container_m6">
+                            <div class="chain_img img_m6"></div>
+                            <div class="chain_infos">
+                                <p class="chain_title">
+                                    M6
+                                </p>
+                                <p class="chain_description">
+                                    M6, abréviation de Métropole Télévision et du canal de diffusion 6, est une chaîne
+                                    de
+                                    télévision généraliste nationale française commerciale privée qui émet depuis le 1ᵉʳ
+                                    mars
+                                    1987.
+                                </p>
+                            </div>
+                        </div>
 
-                <div class="chain_container container_m6">
-                    <div class="chain_img img_m6"></div>
-                    <div class="chain_infos">
-                        <p class="chain_title">
-                            M6
-                        </p>
-                        <p class="chain_description">
-                            M6, abréviation de Métropole Télévision et du canal de diffusion 6, est une chaîne de
-                            télévision généraliste nationale française commerciale privée qui émet depuis le 1ᵉʳ mars
-                            1987.
-                        </p>
-                    </div>
+                        <div class="arrow">></div>
                 </div>
-
-                <div class="arrow">></div>
+                <div class="button tv_color button-chain-choice">Choisir</div>
             </div>
-            <div class="button tv_color button-chain-choice">Choisir</div>
-        </div>
 
-        <div class="set-up path_setup">
-            <h1>BONJOUR</h1>
-            <p>Vous allez vous mettre à la place d’une jeune diplomée en audiovisuel et communication, et vous allez
-                chercher votre premier emploi.</p>
-            <p>Dans quelle filiale allez-vous vous diriger ?</p>
-            <div class="path_container">
-                <div class="button tv_color tv-path">Télé</div>
-                <div class="button radio_color radio-path">Radio</div>
+            <div class="set-up path_setup">
+                <h1 class="super_title">
+                    Où pensez-vous qu’une femme dispose d’autant de temps de parole qu’un homme ?</h1>
+                <div class="path_container">
+                    <div class="button tv_color tv-path">à la télévision ?</div>
+                    <div class="button radio_color radio-path">à la radio ?</div>
+                </div>
             </div>
-        </div>
-        
-        
+
+
+            <div class="introduction_background"></div>
             <div class="introduction_container">
                 <div class="introduction_end_container">
                     <h1>Est-ce que le milieu de la radio et de la télévision sont aussi impactés ???</h1>
-                    <div class="button end_introduction tv_color">Télé</div>
+                    <div class="button end_introduction tv_color">Découvrir</div>
                 </div>
             </div>
 
-    </div>
+        </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="main.js"></script>
-    <script src="sketch.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="main.js"></script>
+        <script src="sketch.js"></script>
 </body>
 
 </html>
