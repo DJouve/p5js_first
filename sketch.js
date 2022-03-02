@@ -17,15 +17,19 @@ function updateChart () {
     fetchData().then(datapoints => {
 
         const womenExpressionRate = datapoints.map(function(index){
-        return Math.round(index.women_expression_rate)
-        })
-        for (let i = 583; i<592; i++){
-            womenExpressionRateArray.push(womenExpressionRate[i])
-        }
-        console.log(womenExpressionRate)
-        console.log(womenExpressionRateArray)
-        }
-    )
+            return Math.round(index.women_expression_rate)
+            })
+            for (let i = 583; i<592; i++){
+                womenExpressionRateArray.push(womenExpressionRate[i])
+            }
+            console.log(womenExpressionRate)
+            console.log(womenExpressionRateArray)
+            }
+        )
+
+        const yearIndex = userFilters.year - 2010
+        const bigChartValue = document.querySelector(".big_chart_value")
+        bigChartValue.innerHTML = womenExpressionRateArray[yearIndex]
 }
 
 
