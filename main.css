@@ -454,3 +454,10 @@ img.fake {
   height: auto;
   margin-bottom: 10vh;
 }
+
+.big_sht {
+  color: white;
+  text-align: center;
+  width: 40vw;
+  margin: 0 auto;
+}
